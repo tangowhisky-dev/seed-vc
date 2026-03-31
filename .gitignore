@@ -26,3 +26,5 @@ runs/
 /garbages/
 /flagged/
 /experimental/
+FIRECRAWL_CONFIG.md
+.mcp.json

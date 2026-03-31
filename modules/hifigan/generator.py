@@ -449,6 +449,6 @@ class HiFTGenerator(nn.Module):
         for l in self.source_resblocks:
             l.remove_weight_norm()
 
-    @torch.inference_mode()
+    @torch.no_grad()
     def inference(self, mel: torch.Tensor, f0=None) -> torch.Tensor:
         return self.forward(x=mel, f0=f0)
